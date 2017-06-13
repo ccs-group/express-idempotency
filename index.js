@@ -80,6 +80,7 @@ function storeMw(req, res, next) {
 }
 
 var idempotency = function (options) {
+  // chain pattern from helmet - see https://github.com/helmetjs/helmet/blob/master/index.js
   var chain = connect();
   chain.use(expressEnd());
   chain.use(checkMw());

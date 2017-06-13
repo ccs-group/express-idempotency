@@ -16,3 +16,4 @@ Requests with a `Idempotency-key` header will be cached, repeat requests will be
 - Write tests
 - Allow different header to be set
 - Allow options to be passed to LRU cache
+- Push to NPM (see https://medium.com/@jdaudier/how-to-create-and-publish-your-first-node-js-module-444e7585b738)
