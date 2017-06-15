@@ -19,7 +19,7 @@
     "idempotency"
   ],
   "author": "Chris Jamieson",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/optimuspay/express-idempotency/issues"
   },
