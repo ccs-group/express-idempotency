@@ -5,7 +5,7 @@ Express Middleware to allow requests to be made idempotent if client passes an i
 ## Code Example
 
 ```javascript
-var idempotency = require('express-idempotency');
+var idempotency = require('@optimuspay/express-idempotency');
 app.use(idempotency());
 
 // if requests have the header "Idempotency-Key" header set, the middleware will check to see whether a cached response to this request has been stored
@@ -21,7 +21,7 @@ Sometimes, it's important to ensure an HTTP request is idempotent, even if you'r
 
 ## Installation
 
-`npm install --save express-idempotency`
+`npm install --save @optimuspay/express-idempotency`
 
 ## Tests
 
