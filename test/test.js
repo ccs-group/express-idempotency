@@ -114,7 +114,14 @@ describe('# Express Idempotency', function() {
 
             expect(res._getStatusCode()).to.equal(responseToStore.statusCode);
             expect(res._getData()).to.deep.equal(responseToStore.body);
-            expect(res._getHeaders()).to.deep.equal(expectedHeaders);
+            // headers are case-insensitive, but the comparison is not
+            expect(Object.keys(res._getHeaders()).reduce((acc, key) => {
+              acc[key.toLowerCase()] = res._getHeaders()[key];
+              return acc;
+            }, {})).to.deep.equal(Object.keys(expectedHeaders).reduce((acc, key) => {
+              acc[key.toLowerCase()] = expectedHeaders[key];
+              return acc;
+            }, {}));
 
             done();
           });
