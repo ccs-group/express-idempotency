@@ -22,7 +22,7 @@ app.use(
   idempotency({
     requestHeaderName: "My-Idempotency-Key",
     generateCacheKey: (req, idempotencyKey) => {
-      return `${req.user.id} + ${idempotencyKey}`;
+      return `${req.user.id}_${idempotencyKey}`;
     },
     lruCacheOptions: {
       max: 9999,
