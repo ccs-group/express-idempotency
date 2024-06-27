@@ -50,7 +50,7 @@ node_modules
 # Elastic Beanstalk
 .elasticbeanstalk/
 
-# Environment variables
+# Environment constiables
 .env
 
 # zipped dist file
