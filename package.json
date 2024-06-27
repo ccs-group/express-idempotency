@@ -1,6 +1,6 @@
 {
   "name": "@optimuspay/express-idempotency",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Express middleware to make requests idempotent",
   "main": "index.js",
   "engines": {
@@ -25,17 +25,16 @@
   },
   "homepage": "https://github.com/optimuspay/express-idempotency#readme",
   "devDependencies": {
-    "chai": "^4.0.2",
-    "events": "^1.1.1",
-    "mocha": "^10.3.0",
-    "node-mocks-http": "^1.6.2",
-    "util": "^0.10.3"
+    "chai": "^4.4.1",
+    "events": "^3.3.0",
+    "mocha": "^10.5.2",
+    "node-mocks-http": "^1.15.0"
   },
   "dependencies": {
-    "connect": "^3.6.2",
-    "debug": "^2.6.8",
+    "connect": "^3.7.0",
+    "debug": "^4.3.5",
     "express-end": "0.0.8",
-    "lru-cache": "^4.1.1",
-    "md5": "^2.2.1"
+    "lru-cache": "^10.2.2",
+    "md5": "^2.3.0"
   }
 }
